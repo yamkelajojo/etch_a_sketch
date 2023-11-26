@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/retro.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/retro.png" />
     <title>Etch A Sketch</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="flex-container">
-        <div class="title"><h1>SketchPad</h1></div>
-        <div class="content">
-            <div class="settings">
-                <div class="buttons">
-
-                    <input id="colorPicker" type="color" value="#333333"/>
-                    <button class = "cofa" onclick="changeColor('black' , this)">Black</button>
-                    <button class = "cofa" onclick="changeColor('white', this)">Erasor</button>
-                    <button class = "cofa" onclick="changeColor('gray', this)">Gray</button>
-                    <button class = "cofa" onclick="changeColor('random', this)">Random</button>
-                    <button class = "cofa" onclick="resetBoard()">Reset</button>
-                    <label>16 x 16</label>
-                    <input id="sizeSlider" type="range" value="16" min="2" max="64"/>
-                                        
-                </div>
-            </div>
-            <div class="main">
-                <div class="board"></div>
-            </div>           
+      <div class="title"><h1>SketchPad</h1></div>
+      <div class="content">
+        <div class="settings">
+          <div class="buttons">
+            <input id="colorPicker" type="color" value="#333333" />
+            <button class="cofa" onclick="changeColor('black' , this)">
+              Black
+            </button>
+            <button class="cofa" onclick="changeColor('white', this)">
+              Erasor
+            </button>
+            <button class="cofa" onclick="changeColor('gray', this)">
+              Gray
+            </button>
+            <button class="cofa" onclick="changeColor('random', this)">
+              Random
+            </button>
+            <button class="cofa" onclick="resetBoard()">Reset</button>
+            <label>16 x 16</label>
+            <input id="sizeSlider" type="range" value="16" min="2" max="64" />
+          </div>
         </div>
-        <footer class="footer">
-            <p>
-              Copyright ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>
-              Dojo
-            </p>
-            <a href="https://github.com/michalosman" target="_blank">
-              <i class="fab fa-github"></i
-            ></a>
-        </footer>    
+        <div class="main">
+          <div class="board"></div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Dojo
+        </p>
+        <a href="https://github.com/michalosman" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
     </div>
-    <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
